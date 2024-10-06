@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://cc2kl0p8hd61w"]
+
+[ext_resource type="Script" path="res://Scripts/wand.gd" id="1_uu5um"]
+[ext_resource type="Texture2D" uid="uid://bjwkfyg5vdoh3" path="res://Sprites/wand.png" id="2_rq21w"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w6eby"]
+size = Vector2(4, 4)
+
+[node name="Wand" type="CharacterBody2D"]
+script = ExtResource("1_uu5um")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(52, 0)
+shape = SubResource("RectangleShape2D_w6eby")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(54, -6)
+rotation = 1.5708
+texture = ExtResource("2_rq21w")
+centered = false

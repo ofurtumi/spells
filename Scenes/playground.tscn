@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://lqett5qflbju"]
+
+[ext_resource type="PackedScene" uid="uid://cc2kl0p8hd61w" path="res://Scenes/wand.tscn" id="1_1ag84"]
+[ext_resource type="Script" path="res://Scripts/playground.gd" id="1_jdm1f"]
+
+[node name="Playground" type="Node2D"]
+script = ExtResource("1_jdm1f")
+
+[node name="Wand" parent="." instance=ExtResource("1_1ag84")]
+position = Vector2(140, 124)
